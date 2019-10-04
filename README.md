@@ -12,7 +12,7 @@ Built With
 XCode- integrated development environment for macOS used
 
 Authors
-Ryan Pinnock - Initial work - PurpleBooth
+Ryan Pinnock - Initial work 
 
 License
 This project is licensed under the MIT License - see the LICENSE.md file for details

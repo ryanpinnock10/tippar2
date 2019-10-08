@@ -18,6 +18,8 @@ class settingsViewController: UIViewController {
     
     @IBOutlet weak var darkModeSwitch: UISwitch!
     
+    @IBOutlet weak var customTipText: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,7 +36,11 @@ class settingsViewController: UIViewController {
     @IBAction func tipOrNone(_ sender: Any) {
     }
     
+    @IBAction func customTip(_ sender: Any) {
+    }
     
+    @IBAction func changeCurrency(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 

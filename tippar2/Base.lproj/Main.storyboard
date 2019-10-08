@@ -136,6 +136,9 @@
                                     <segment title="Standard Tip"/>
                                     <segment title="Custom Tip"/>
                                 </segments>
+                                <connections>
+                                    <action selector="customTip:" destination="7En-h3-69t" eventType="valueChanged" id="I5C-NB-CwH"/>
+                                </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U1I-pj-lSa">
                                 <rect key="frame" x="156" y="459" width="97" height="34"/>
@@ -169,6 +172,7 @@
                                 </segments>
                                 <connections>
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="JXE-aZ-3hl"/>
+                                    <action selector="changeCurrency:" destination="7En-h3-69t" eventType="valueChanged" id="Ohn-59-cdp"/>
                                     <action selector="currencyControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="jsv-mb-qry"/>
                                 </connections>
                             </segmentedControl>
@@ -200,6 +204,7 @@
                         <connections>
                             <outlet property="currencyChange" destination="0Xe-in-gK7" id="Kyc-6b-V2a"/>
                             <outlet property="customTip" destination="yP8-de-Swo" id="amT-AD-rZq"/>
+                            <outlet property="customTipText" destination="U1I-pj-lSa" id="MaF-ct-QbL"/>
                             <outlet property="darkModeSwitch" destination="mGd-yD-N7S" id="pyd-0B-Jho"/>
                             <outlet property="tipOrNoTip" destination="KE9-OX-PQe" id="rdn-f8-gAG"/>
                             <outletCollection property="gestureRecognizers" destination="2X3-kB-Vsx" appends="YES" id="mJd-y6-TJy"/>
@@ -222,7 +227,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="51z-l7-bBC" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Otw-US-4Vv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Otw-US-4Vv">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
